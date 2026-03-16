@@ -1,0 +1,78 @@
+/* Hero Section styling */
+.hero-section {
+    min-height: 100vh;
+    background-image: url(Mk.jpg); /* Replace with your actual hero image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+}
+
+/* Navbar active state */
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Project Card Image Handling */
+.project-img-container {
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Spacing and Polish */
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact form focus state */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* BONUS: Print-Ready Résumé View */
+@media print {
+    /* Hide everything except the about section */
+    nav, .hero-section, #contact, footer, .btn, .bi-code-slash {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+    }
+
+    #about {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
