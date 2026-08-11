@@ -32,10 +32,3 @@ Check out the live deployment on Amazon S3:
 
 ---
 
-## Project Structure
-
-```text
-├── index.html          # Main HTML markup and feed container layout
-├── style.css           # Core stylesheet for TikTok layout rules, animation effects, and responsiveness
-├── script.js           # JavaScript logic handling scroll navigation and interaction mechanics
-└── assets/             # Media assets, icons, project previews, and profile avatars
